@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:padding="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:layout_weight="3"
+        android:background="@drawable/ll_style"
+        android:layout_margin="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_margin="2dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/banner"
+
+                android:background="#fff"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etDelata"
+                style="@style/etStyle"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:background="@drawable/edit_text_selector"
+                android:drawableLeft="@drawable/delta2"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:inputType="none"
+                android:text="0"
+                android:textIsSelectable="true"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/etPersent"
+                style="@style/etStyle"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_selector"
+                android:drawableLeft="@drawable/persent4"
+                android:ems="3"
+                android:gravity="right|center_vertical"
+                android:inputType="none"
+                android:maxLength="4"
+                android:text="0"
+                android:textIsSelectable="true"
+                android:focusable="false"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etCustomer"
+                style="@style/etStyle"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:background="@drawable/edit_text_selector"
+                android:drawableLeft="@drawable/customer4"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:inputType="none"
+                android:maxLength="10"
+                android:text="0"
+                android:textIsSelectable="true" />
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_8_neolit_selector"
+                android:spinnerMode="dialog"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity=""
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etCarrier"
+                style="@style/etStyle"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:background="@drawable/edit_text_selector"
+                android:drawableLeft="@drawable/carrier3"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:inputType="none"
+                android:maxLength="10"
+                android:text="0"
+                android:textIsSelectable="true" />
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_8_neolit_selector"
+                android:spinnerMode="dialog"></Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etReturn"
+                style="@style/etStyle"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:background="@drawable/edit_text_selector"
+                android:drawableLeft="@drawable/return4"
+                android:ems="10"
+                android:gravity="right|center_vertical"
+                android:inputType="none"
+                android:maxLength="10"
+                android:text="0"
+                android:textIsSelectable="true" />
+            <Button
+                android:id="@+id/spinner3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_8_neolit_selector"
+                android:text="Софт/Нал"
+                style="@style/radioButtonStyle"
+                android:textSize="15sp"></Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_radio1_neolit_selector"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="Україна" />
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Междунар."
+                    style="@style/buttonStyle"
+                    android:gravity="center"
+                    android:background="@drawable/button_radio2_neolit_selector"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <!--<LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/ll_style"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_pay_neolit_normal_top"
+                android:drawableTop="@drawable/customer"
+                android:padding="10dp"
+                style="@style/buttonStyle" />
+
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_orange_dark"
+                android:duplicateParentState="false"
+                android:text="Б/Н с НДС"
+                android:background="@drawable/button_8_neolit_selector"
+                style="@style/radioButtonStyle"/>
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_orange_dark"
+                android:text="Б/Н единый"
+                android:background="@drawable/button_8_neolit_selector"
+                style="@style/radioButtonStyle"/>
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_orange_dark"
+                android:text="Софт/Нал"
+                android:background="@drawable/button_pay_neolit_selector_bottom"
+                style="@style/radioButtonStyle"/>
+        </LinearLayout>-->
+        <!--<LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/ll_style"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_pay_neolit_normal_top"
+                android:drawableTop="@drawable/carrier2"
+                android:padding="15dp"
+                style="@style/buttonStyle"/>
+
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_orange_dark"
+                android:duplicateParentState="false"
+                android:text="Б/Н с НДС"
+                android:background="@drawable/button_8_neolit_selector"
+                style="@style/radioButtonStyle"/>
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_orange_dark"
+                android:text="Б/Н единый"
+                android:background="@drawable/button_8_neolit_selector"
+                style="@style/radioButtonStyle"/>
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_orange_dark"
+                android:text="Софт/Нал"
+                android:background="@drawable/button_pay_neolit_selector_bottom"
+                style="@style/radioButtonStyle"/>
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/ll_style">
+
+            <Button
+                android:id="@+id/btClear"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/number_C"
+                android:background="@drawable/button_clear_neolit_selector"
+                style="@style/buttonStyle"
+                android:layout_margin="1dp"/>
+            <Button
+                android:id="@+id/btDelete"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/number_Del"
+                android:background="@drawable/button_del_neolit_selector"
+                style="@style/buttonStyle"
+                android:layout_margin="1dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="3"
+            android:background="@drawable/ll_style"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/number_7"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_8_neolit_selector"
+                    android:text="@string/number_7" />
+
+                <Button
+                    android:id="@+id/number_8"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_8_neolit_selector"
+                    android:text="@string/number_8" />
+
+                <Button
+                    android:id="@+id/number_9"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_8_neolit_selector"
+                    android:text="@string/number_9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/number_4"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_8_neolit_selector"
+                    android:text="@string/number_4" />
+
+                <Button
+                    android:id="@+id/number_5"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_8_neolit_selector"
+                    android:text="@string/number_5" />
+
+                <Button
+                    android:id="@+id/number_6"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_8_neolit_selector"
+                    android:text="@string/number_6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/number_1"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_8_neolit_selector"
+                    android:text="@string/number_1" />
+
+                <Button
+                    android:id="@+id/number_2"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_8_neolit_selector"
+                    android:text="@string/number_2" />
+
+                <Button
+                    android:id="@+id/number_3"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_8_neolit_selector"
+                    android:text="@string/number_3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/number_0"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/button_8_neolit_selector"
+                    android:text="@string/number_0" />
+
+                <Button
+                    android:id="@+id/number_point"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_8_neolit_selector"
+                    android:text="@string/number_point" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/Generate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Generate"
+                android:background="@drawable/button_go_neolit_selector"
+                android:layout_margin="1dp"
+                style="@style/buttonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

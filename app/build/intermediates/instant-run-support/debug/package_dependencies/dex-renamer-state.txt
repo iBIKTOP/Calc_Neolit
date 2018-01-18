@@ -1,0 +1,4 @@
+#Sat Dec 16 13:09:37 EET 2017
+base.0=D\:\\Projects\\Java_2017\\Calc\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\48
+path.0=classes.dex
+renamed.0=classes.dex

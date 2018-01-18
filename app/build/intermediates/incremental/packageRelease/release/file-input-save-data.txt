@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Thu Dec 21 21:32:56 EET 2017
+0.baseType=DIRECTORY
+0.base=D\:\\Projects\\Java_2017\\Calc\\app\\build\\intermediates\\transforms\\dex\\release\\0
+0.path=classes.dex
+0.set=DEX
+count=1
